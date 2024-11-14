@@ -22,7 +22,8 @@ Validator Utility displays fields marked with attributes in the editor, alerting
 ![image](https://github.com/user-attachments/assets/73ff3a73-e5ea-4ff4-829b-8d8f2cb86649)
 
 ### **Script Draft**
-With Script Draft, you can pre-define various script templates. By right-clicking in the project file explorer, you can quickly create a new `.cs` script based on the selected template. In the background, it uses the O2 Script Builder: [o2scriptbuilderlink]
+With Script Draft, you can pre-define various script templates. By right-clicking in the project file explorer, you can quickly create a new `.cs` script based on the selected template. In the background, it uses the O2 Script Builder: [Link Text]([URL](https://github.com/OxygenButBeta/o2-ScriptBuilder))
+
 ![image](https://github.com/user-attachments/assets/344f468f-a293-4d50-8f17-6296de071aca)
 ![image](https://github.com/user-attachments/assets/5ed5ebab-c94b-453f-8e09-c09482b4548c)
 
