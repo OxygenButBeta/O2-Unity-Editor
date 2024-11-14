@@ -1,0 +1,19 @@
+{
+    "name": "o2.EditorTools",
+    "rootNamespace": "o2.Editor.Tools",
+    "references": [
+        "GUID:02f27da76189df241a6ea4ede04584bd",
+        "GUID:2a5de47ee2e18634285f5cd49e6aeb37"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
