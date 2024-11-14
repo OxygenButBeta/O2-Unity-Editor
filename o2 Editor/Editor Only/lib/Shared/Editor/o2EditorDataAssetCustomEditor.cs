@@ -44,10 +44,10 @@ public class o2EditorDataAssetCustomEditor : Editor {
                 MethodType = MethodType._static
             };
 
-            var attributePath = $"GameObject/o2/Quick Fab/{subMenu + editorDataAsset.QuickFab.Prefabs[i].Name}";
+            var attributePath = $"GameObject/O2/Quick Fab/{subMenu + editorDataAsset.QuickFab.Prefabs[i].Name}";
             methodBuilder.Name = $"Draw_ContextMenu_{GenerateRandomString(6)}";
             methodBuilder.Body =
-                $"PrefabUtility.InstantiatePrefab(o2EditorUtility.GetDataAsset().QuickFabAssets.Prefabs[{i.ToString()}].Prefab);";
+                $"PrefabUtility.InstantiatePrefab(o2EditorUtility.GetDataAsset().QuickFab.Prefabs[{i.ToString()}].Prefab);";
             methodBuilder.AddAttribute("MenuItem", $"\"{attributePath}\", false, 0");
             scriptBuilder.AddMethod(methodBuilder);
         }

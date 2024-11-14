@@ -50,8 +50,15 @@ namespace o2.EditorTools {
                 _activeScenes.Count != 0)
             {
                 _sceneUtilityPreset.StartWithSetupScene = _IsStartSceneSet;
-                _sceneUtilityPreset.StartScenePath = _activeScenes[selectedIndex];
-                Debug.Log(selectedIndex);
+                try
+                {
+                    _sceneUtilityPreset.StartScenePath = _activeScenes[selectedIndex];
+                }
+                catch (Exception e)
+                {
+                    _sceneUtilityPreset.StartScenePath = _activeScenes[0];
+                }
+
                 _isStartSceneSetPrevious = _IsStartSceneSet;
                 previousIndex = selectedIndex;
             }
