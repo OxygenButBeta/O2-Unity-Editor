@@ -6,6 +6,7 @@
 
 ### **Hierarchy Highlighter**
 This tool allows you to color objects with specific tags in Unity's hierarchy window. It also enables you to modify their font properties and alignment for better organization.
+
 ![image](https://github.com/user-attachments/assets/c546f84a-08d2-40bc-b677-bb8663934feb)
 ![image](https://github.com/user-attachments/assets/82f76410-1a24-4b0e-803a-c8e7d2d27e28)
 
