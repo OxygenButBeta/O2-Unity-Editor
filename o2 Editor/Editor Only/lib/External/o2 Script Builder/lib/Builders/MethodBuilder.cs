@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace o2.Runtime.ScriptGeneration {
-
     /// <summary>
     /// Builds a C# method with specified properties, including name, return type, access modifier, 
     /// attributes, parameters, and body content.
     /// </summary>
     public class MethodBuilder : IBuildable {
         public string Name = "UnnamedMethod";
-        public string Body = "throw new NotImplementedException();";
+        public string Body = string.Empty;
         public bool ExpressionBody = false;
         public string ReturnTypeAsString = String.Empty;
         public Type ReturnType = typeof(void);
@@ -27,7 +26,8 @@ namespace o2.Runtime.ScriptGeneration {
         public string Build() {
             StringBuilder builder = new();
 
-            foreach (var attribute in Attributes) {
+            foreach (var attribute in Attributes)
+            {
                 if (!string.IsNullOrEmpty(attribute.param))
                     builder.Append("[" + attribute.Attribute + "(" + attribute.param + ")]\n");
                 else
@@ -41,7 +41,8 @@ namespace o2.Runtime.ScriptGeneration {
                 .Append(AccessModifier.ToString().Replace("_", " "))
                 .Append(" ");
 
-            if (MethodType != MethodType._instance) {
+            if (MethodType != MethodType._instance)
+            {
                 builder.Append(MethodType.ToString().Replace("_", ""));
                 builder.Append(" ");
             }
@@ -51,7 +52,8 @@ namespace o2.Runtime.ScriptGeneration {
                 .Append(Name)
                 .Append("(");
 
-            for (var index = 0; index < Parameters.Count; index++) {
+            for (var index = 0; index < Parameters.Count; index++)
+            {
                 var (parameter, parameterName) = Parameters[index];
                 builder.Append(parameter)
                     .Append(" ")
@@ -63,13 +65,17 @@ namespace o2.Runtime.ScriptGeneration {
             if (Parameters.Count > 0 && OptionalParameters.Count > 0)
                 builder.Append(", ");
 
-            for (var index = 0; index < OptionalParameters.Count; index++) {
+            for (var index = 0; index < OptionalParameters.Count; index++)
+            {
                 (string type, string NameAndvalue, string value) optionalParameter = OptionalParameters[index];
                 builder.Append(optionalParameter.type + " " + optionalParameter.NameAndvalue + " = " +
                                optionalParameter.value);
                 if (index < OptionalParameters.Count - 1)
                     builder.Append(", ");
             }
+
+            if (Body == string.Empty)
+                Body = "throw new NotImplementedException();";
 
             builder.Append(")")
                 .Append(ExpressionBody ? " => " : " {\n")

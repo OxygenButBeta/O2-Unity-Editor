@@ -6,7 +6,7 @@ namespace o2.Runtime.ScriptGeneration {
     /// <summary>
     /// Dynamically generates a C# enum declaration with specified name, values, and optional namespace.
     /// </summary>
-    public class EnumBuilder : IBuildable {
+    public class EnumBuilder :  ICSBuilder {
 
         private readonly List<string> _enumValues = new();
         private readonly string EnumName;

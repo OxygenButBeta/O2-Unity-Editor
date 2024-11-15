@@ -2,7 +2,6 @@ using o2.EditorTools.o2_Editor;
 using o2.EditorTools.o2_Editor.QuickFab;
 using o2.EditorTools.Validator;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace o2.EditorTools {
     [CreateAssetMenu(fileName = "o2EditorSettings", menuName = "O2/Editor/TagHighlighter Asset")]

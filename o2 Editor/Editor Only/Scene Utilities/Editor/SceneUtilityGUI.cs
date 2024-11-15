@@ -54,7 +54,7 @@ namespace o2.EditorTools {
                 {
                     _sceneUtilityPreset.StartScenePath = _activeScenes[selectedIndex];
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     _sceneUtilityPreset.StartScenePath = _activeScenes[0];
                 }
