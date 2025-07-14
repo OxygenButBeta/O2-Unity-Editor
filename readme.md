@@ -56,7 +56,3 @@ Organize and categorize your prefabs/models for quick access. Right-click in the
 - **Script Draft** — Quickly scaffold scripts using your custom templates.  
 - **Quick Fab** — Streamline level design by categorizing and accessing prefabs fast.
 
----
-
-Made with ❤️ by **Süleyman Akbulut**  
-GitHub: [github.com/OxygenButBeta](https://github.com/OxygenButBeta)
