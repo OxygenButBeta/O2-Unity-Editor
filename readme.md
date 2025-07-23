@@ -27,7 +27,7 @@ Easily spot unassigned fields marked with attributes and get alerts in the edito
 ---
 
 ### 📝 Script Draft  
-Predefine script templates and generate `.cs` files directly from the Project window’s right-click menu. Built on top of the powerful [O2 Script Builder](https://github.com/OxygenButBeta/o2-ScriptBuilder) for flexible and dynamic script generation.  
+Predefine script templates and generate `.cs` files directly from the Project window’s right-click menu. Built on top of the [O2 Script Builder](https://github.com/OxygenButBeta/o2-ScriptBuilder) for flexible and dynamic script generation.  
 ![Script Draft](https://github.com/user-attachments/assets/344f468f-a293-4d50-8f17-6296de071aca)  
 ![Script Draft](https://github.com/user-attachments/assets/5ed5ebab-c94b-453f-8e09-c09482b4548c)
 
